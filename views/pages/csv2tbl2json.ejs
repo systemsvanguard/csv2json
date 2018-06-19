@@ -1,0 +1,46 @@
+
+<%- contentFor('hero') %>
+<section class="hero">
+  <div class="hero-content">
+    <h2>About Us</h2>
+  </div>
+</section>
+
+<%- contentFor('body') %>
+<div class="jumbotron text-center">
+  <h1>Convert CSV to JSON</h1>
+	<p>Swab walk the plank end fore Blimey ballast jib coffer maroon piracy booty. Bilge poop deck Barbary Coast trysail interloper parley run a shot across the bow chandler sutler crows nest sheet. Yo-ho-ho tender dance the hempen jig chandler Gold Road coxswain warp Buccaneer hogshead bilge rat Jack Ketch.
+	</p>
+
+
+</div><!-- jumbotron -->
+<!-- jumbotron -->
+<div class="jumbotron jumbotron-fluid bg-light text-dark">
+  <div class="container">
+	<h1>CSV to Table to JSON</h1>      
+	<p>A simple Node.js based CSV to JSON conversion site.</p>
+	<br>
+	<span class="numberCircle"><span>1</span></span>
+	<button type="button" class="btn btn-warning" onClick="location.href=location.href"><i class="fa fa-repeat"></i> Refresh Page</button> 
+	
+	<span class="numberCircle"><span>2</span></span>
+	<input type="file" id="fileUpload" class="btn btn-info" title="Browse for CSV" />
+	<!-- 
+	<button  type="file" id="fileUpload" class="btn btn-info"><i class="fa fa-search"></i>Browse for CSV</button> 
+	-->
+	
+	<span class="numberCircle"><span>3</span></span>
+	<button type="button" class="btn btn-success" id="upload" value="Upload"><i class="fa fa-table"></i> Load in CSV </button> 
+	
+	<span class="numberCircle"><span>4</span></span>
+	<button type="button" class="btn btn-primary" id="json" value="json"><i class="fa fa-check"></i> Generate JSON </button>
+	
+	<span class="numberCircle"><span>5</span></span>
+	<a href="/" class="btn btn-info" role="button"><i class="fa fa-home"></i> Home</a>
+	
+	<br><hr /><h3 class="myheading"> JSON Data</h3> <div id="next" class="next" style="overflow-x:auto;"></div><br>
+	<br><hr /><h3 class="myheading2">  CSV Data</h3><div id="dvCSV" class="dvCSV" style="overflow-x:auto;"></div>
+	<br><br>
+
+  </div><!--/ jumbotron container -->
+</div><!--/ jumbotron -->

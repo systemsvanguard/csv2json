@@ -1,0 +1,27 @@
+{
+  "name": "etl_csv2json",
+  "version": "1.3.2",
+  "description": "A simple Node.js based CSV to JSON conversion site.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "CSV",
+    "JSON",
+    "Conversion",
+    "Node.js"
+  ],
+  "author": "Ryan Hunter | GitHub: SystemsVanguard",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "csv2json": "^1.4.2",
+    "csvtojson": "^2.0.0",
+    "ejs": "^2.5.1",
+    "express": "^4.14.0",
+    "express-ejs-layouts": "^2.2.0",
+    "papaparse": "^4.4.0",
+    "nodemon": "^1.10.2"
+  }
+}

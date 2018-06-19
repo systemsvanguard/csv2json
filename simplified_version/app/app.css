@@ -1,0 +1,80 @@
+/* Styling for Redacted site */
+body {
+	font-family: "Lato", Arial, Helvetica, sans-serif;
+	font-size: 100%;
+}
+
+/* Headings */
+.csvHasHeaders {
+	color:#e80000;  /* marron red */
+	font-weight:bold;
+	line-height: 1.8;
+	font-family: "Mukta Malar", Arial, Helvetica, sans-serif;
+	font-size: 1.875em; /* 30px/16=1.875em */
+}
+
+.myheading {
+	color:#00008b;  /* deep blue */
+	font-weight:bold;
+}
+
+.myheading2 {
+	color:#008b00; /* deep green */
+	font-weight:bold;
+}
+
+/* table styling */
+table, th, td {
+   border: 1px solid #00008b;
+   padding: 5px;
+}
+th {
+    text-align: left;
+}
+
+tr:hover {background-color: #66ccff;}
+tr:nth-child(even) {background-color: #0099ff;}
+th {
+    background-color: #00008b;
+    color: white;
+}
+
+/* styling our footer */
+footer   {
+  background: lightyellow ;
+  color: blue;   /* text color in footer */
+  padding: 20px 0px 5px 0px;  
+  text-align: center;
+}
+
+
+/* miscellaneous */
+.dvCSV {	
+}
+.next {	
+}
+
+.numberCircle {
+    display:inline-block;
+    line-height:0px;    
+    border-radius:50%;
+    border:2px solid;    
+    font-size:32px;
+	background-color: #00008b;  /* deep blue */
+	color:white; 
+	font-weight:bold;
+}
+
+.numberCircle span {
+    display:inline-block;
+    
+    padding-top:50%;
+    padding-bottom:50%;
+    
+    margin-left:8px;
+    margin-right:8px;
+}
+
+
+
+		

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Redacted Portfolio</title>
+	<!-- Portfolio site for Redacted. Version 1.0.3 dated 2018 May 21 -->
+	<!-- Built by Ryan Hunter | GitHub: SystemsVanguard -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" type="image/ico" href="images/favicon.ico">
+	<!-- stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Lato|Mukta+Malar" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js">
+	<link rel="stylesheet" href="libs/filedrop.css">
+	<link rel="stylesheet" href="app/app.css">
+	<style></style>	
+  </head>
+  <body>
+  <!-- header -->
+  <header></header>
+  <!-- main section -->
+  <!-- jumbotron -->
+	<div class="jumbotron jumbotron-fluid bg-primary text-white">
+	  <div class="container">
+		<h1>Redacted Canada</h1>
+		<h2>CSV to JSON Conversion Utility</h2> 	
+		
+        <p>A simple Node.js based CSV to JSON conversion site.</p>
+        <br>
+        <button type="submit"  onClick="location.href=location.href" class="btn btn-warning"><i class="fa fa-refresh"></i> Purge Boxes & Refresh Page</button>
+		
+		<button type="button" class="btn btn-info" onclick="copyGeneratedJSON()" id="btnCopyJSON"><i class="fa fa-clipboard"></i> Copy JSON </button>
+		
+		<a href="csv2tbl2json.html" class="btn btn-success" role="button"><i class="fa fa-code"></i> Another CSV ~ JSON Tool</a>
+		<p>
+		<br><br>
+		<span class="csvHasHeaders">
+		    <label for="hasHeaders"> <input type="checkbox" id="hasHeaders" class="form-check-input" value="" title="Tick if your CSV already has headers."> CSV has Headers? </label>
+		</span>
+		<br><em><strong>Ensure to use the 'CSV has Headers?' checkbox where needed!</strong> Please note this code is SLOW with really, really LARGE files, but it does work.</em>
+		<!-- Text Area for CSV input -->
+		<br><textarea id="dragdropCSVinput" readonly  class="form-control bg-info text-white" rows="12" name="text" title="Drag your CSV file here">Drag and Drop your CSV file here!
+        </textarea>
+		<!-- Text Area for JSON output -->
+        <br><textarea id="generatedJSONoutput" class="form-control bg-light text-dark" rows="24" name="text" title="The JSON output will show here">Generated JSON displays here</textarea><br>		
+        <br>
+		</p>
+		
+	  </div><!--/ jumbotron container -->
+	</div><!--/ jumbotron -->
+
+  <!-- footer -->
+  <footer>
+	<p class="footer_style">Copyright &copy; 2018 | Coding Portfolio for Redacted at <a href="http://www.ryanhunter.org/">RyanHunter.org</a></p>
+  </footer>
+  
+  	
+    <!-- JS files. Place at botton of document for speed. -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="libs/filedrop.js"></script> 
+	<script src="libs/papaparse.js"></script> 
+	<script src="app/csv2json.js"></script>  
+	<script src="app/app.js"></script> 
+	<script>
+	</script>
+  </body>
+</html>
